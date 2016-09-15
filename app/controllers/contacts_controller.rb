@@ -16,7 +16,7 @@ class ContactsController < ApplicationController
                               middle_name: params[:middle_name],
                               last_name: params[:last_name],
                               phone_number: params[:phone_number],
-                              email: params[:phone_number])
+                              email: params[:email])
     flash[:success] = "contact made"
     redirect_to "/contacts"
   

@@ -11,5 +11,9 @@ Rails.application.routes.draw do
   patch '/contacts/:id/' => 'contacts#update'
 
   delete '/contacts/:id' => 'contacts#destroy'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  delete '/logout' => 'sessions#destroy'
 end
 
